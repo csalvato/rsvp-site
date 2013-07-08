@@ -1,8 +1,10 @@
 class RsvpMailer < ActionMailer::Base
-  default from: 'chris@chrisandserena.com'
+  default from: "RSVP Site <chris@chrissalvato.com>"
 
-	def rsvp_email(name)
+	def rsvp_email(name, others, notes)
     @name = name
-    mail(to: ["csalvato@gmail.com", "serena.thomson1@btinternet.com"], subject: 'RSVP Received')
+    @others = others
+    @notes = notes
+    mail(to: "csalvato@gmail.com", subject: 'RSVP Received')
   end
 end
