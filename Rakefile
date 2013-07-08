@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-SearchWordCreator::Application.load_tasks
+RSVPSite::Application.load_tasks
