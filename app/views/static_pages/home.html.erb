@@ -1,3 +1,22 @@
+<style type="text/css">
+.btn-custom {
+  background-color: hsl(265, 60%, 13%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a278dd", endColorstr="#1d0d35");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#a278dd), to(#1d0d35));
+  background-image: -moz-linear-gradient(top, #a278dd, #1d0d35);
+  background-image: -ms-linear-gradient(top, #a278dd, #1d0d35);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a278dd), color-stop(100%, #1d0d35));
+  background-image: -webkit-linear-gradient(top, #a278dd, #1d0d35);
+  background-image: -o-linear-gradient(top, #a278dd, #1d0d35);
+  background-image: linear-gradient(#a278dd, #1d0d35);
+  border-color: #1d0d35 #1d0d35 hsl(265, 60%, -0.5%);
+  color: #fff !important;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.89);
+  -webkit-font-smoothing: antialiased;
+}
+</style>
 <div class="container">
 	<h1 class="text-center well span8 offset2">Chris and Serena</h1>
 <%= form_tag submit_path, class: "well span8 offset2" do %>
@@ -13,7 +32,7 @@
 
 
   <div class="submit-button">
-    <%= submit_tag "RSVP Me!", class: "btn btn-primary btn-large pull-right" %>
+    <%= submit_tag "RSVP Me!", class: "btn btn-custom btn-large pull-right" %>
   </div>
 <% end %>
 </div>
