@@ -1,8 +1,19 @@
-<form name="input" action="/submit/" method="post">
+<div class="container">
+	<h1 class="text-center well span8 offset2">Chris and Serena</h1>
+<%= form_tag submit_path, class: "well span8 offset2" do %>
+	<h3 class="text-center">Wedding RSVP Form</h3>
+  <%= label_tag :name %>
+  <%= text_field_tag :name, params[:name], placeholder: "Who are you?", class: "span8" %>
+  
+  <%= label_tag :others, "Who will be your guest(s)?" %>
+  <%= text_area_tag :others, params[:others], placeholder: "List the names of any invited guests or children that will accompany you.", class: "span8", rows: 5 %>
+	
+	<%= label_tag :notes %>
+  <%= text_area_tag :notes, params[:notes], placeholder: "Is there anything else we should know?", class: "span8", rows: 3 %>
 
-<label for="name">Full Name</label><input placeholder="Who are you?" type="text" name="name" />
-<label for="others">Who will be your guest(s)?</label><textarea placeholder="List the names of any invited guests or children that will accompany you." name="others"></textarea>
-<label for="notes">Notes</label><textarea placeholder="Is there anything else we should know?" name="notes"></textarea>
 
-
-<input type="submit" value="Login" />
+  <div class="submit-button">
+    <%= submit_tag "RSVP Me!", class: "btn btn-primary btn-large pull-right" %>
+  </div>
+<% end %>
+</div>

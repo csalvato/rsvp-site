@@ -5,6 +5,6 @@ class RsvpMailer < ActionMailer::Base
     @name = name
     @others = others
     @notes = notes
-    mail(to: "csalvato@gmail.com", subject: 'RSVP Received')
+    mail(to: ["csalvato@gmail.com","serena.thomson1@btinternet.com"], subject: "RSVP from #{@name}")
   end
 end
