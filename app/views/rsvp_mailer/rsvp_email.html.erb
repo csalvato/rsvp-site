@@ -4,8 +4,10 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>RSVP Received</h1>
-    <p><%= @name %> just submitted an RSVP!</p>
+    <h1>RSVP from <%= @name %></h1>
+    <p>RSVP Submitted by:<br/>
+    	<%= @name %>
+    </p>
     <p>They will be coming with:<br/>
 		<%= @others %>
     </p>
