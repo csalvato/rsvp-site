@@ -18,21 +18,43 @@
 }
 </style>
 <div class="container">
-	<h1 class="text-center well span8 offset2">Chris and Serena</h1>
-<%= form_tag submit_path, class: "well span8 offset2" do %>
-	<h3 class="text-center">Wedding RSVP Form</h3>
-  <%= label_tag :name %>
-  <%= text_field_tag :name, params[:name], placeholder: "Who are you?", class: "span8" %>
-  
-  <%= label_tag :others, "Who will be accompanying you?" %>
-  <%= text_area_tag :others, params[:others], placeholder: "List the names of other invitees who will be able to come to the party.", class: "span8", rows: 5 %>
-	
-	<%= label_tag :notes %>
-  <%= text_area_tag :notes, params[:notes], placeholder: "Is there anything else we should know?", class: "span8", rows: 3 %>
-
-
-  <div class="submit-button">
-    <%= submit_tag "RSVP Me!", class: "btn btn-custom btn-large pull-right" %>
+  <div class="row">
+	 <h1 class="text-center well span8 offset2">Chris and Serena</h1>
   </div>
-<% end %>
+  <div class="row">  
+  <%= form_tag submit_path, class: "well span8 offset2" do %>
+  	<h3 class="text-center">Wedding RSVP Form</h3>
+    <%= label_tag :name %>
+    <%= text_field_tag :name, params[:name], placeholder: "Who are you?", class: "span8" %>
+    
+    <%= label_tag :others, "Who will be accompanying you?" %>
+    <%= text_area_tag :others, params[:others], placeholder: "List the names of other invitees who will be able to come to the party.", class: "span8", rows: 5 %>
+  	
+  	<%= label_tag :notes %>
+    <%= text_area_tag :notes, params[:notes], placeholder: "Is there anything else we should know?", class: "span8", rows: 3 %>
+
+
+    <div class="submit-button">
+      <%= submit_tag "RSVP Me!", class: "btn btn-custom btn-large pull-right" %>
+    </div>
+  <% end %>
+  </div>
+  <div class="row">
+    <div class="well span8 offset2">
+        <h2 class="text-center">Roma View Catering</h2>
+        <div class="row">
+          <div class="span4">
+            <p>16005 Cross Bay Blvd<br/>
+            Jamaica, NY ‎ 32 ft E <br/></p>
+            <p><a href="tel://1-718-843-1818">(718) 843-1818</a></p>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Roma+View+Catering,+160-05+Cross+Bay+Boulevard,+Howard+Beach,+NY&amp;aq=&amp;sll=40.657303,-73.839157&amp;sspn=0.206538,0.295601&amp;ie=UTF8&amp;hq=Roma+View+Catering,&amp;hnear=160-5+Cross+Bay+Blvd,+Howard+Beach,+New+York+11414&amp;t=m&amp;ll=40.657303,-73.839157&amp;spn=0.006295,0.006295">View Larger Map</a></small>
+          </div>
+          <img class="span4" src="/assets/roma-view.png" width="50%" style="padding: 0 0 2% 0;"/>
+        </div>
+        <div class="row">
+          <iframe class="span8" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Roma+View+Catering,+160-05+Cross+Bay+Boulevard,+Howard+Beach,+NY&amp;aq=&amp;sll=40.657303,-73.839157&amp;sspn=0.206538,0.295601&amp;ie=UTF8&amp;hq=Roma+View+Catering,&amp;hnear=160-5+Cross+Bay+Blvd,+Howard+Beach,+New+York+11414&amp;t=m&amp;ll=40.657303,-73.839157&amp;spn=0.006295,0.006295&amp;z=13&amp;output=embed"></iframe><br /><small>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
