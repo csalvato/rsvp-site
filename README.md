@@ -1,3 +1,3 @@
-# Search Word Creator
+# RSVP Site
 
-Search Word Creator lets users create search word puzzles quickly and easily for education (or fun!).
+A simple RSVP site created to process RSVPs for my wedding on November 1, 2013.
